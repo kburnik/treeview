@@ -7,7 +7,7 @@ TreeView - a jQuery plugin by Kristijan Burnik
 
 
 TREEVIEW  jQuery extension 
-Developed by Kristijan Burnik :: (c) 2010 :: http://www.invision-web.net/
+Developed by Kristijan Burnik :: (nc) 2010 :: http://www.invision-web.net/
 
 jQuery Extensions:
 	$.fn.treeview
