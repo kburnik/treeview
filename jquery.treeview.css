@@ -1,0 +1,127 @@
+ul.treeview {
+	
+	font:11px Arial;
+	padding:0px;
+	
+	list-style:none;
+	
+	
+}
+
+ul.treeview.expanded {
+	display:block;
+}
+
+ul.treeview.contracted {
+	display:none;
+}
+
+.treeview .node-icon {
+	background:url('images/folder.gif') left top no-repeat;
+	width:16px;
+	height:16px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+ul.treeview li.node{
+	display:block;
+	/*border:1px solid black;*/
+	padding:0px;
+	margin:2px;
+	margin-left:4px;
+	padding-left:10px;
+	position:relative;
+}
+
+
+ul.treeview .node-title{
+	display:inline;
+	padding:2px;
+	cursor:pointer;
+}
+
+ul.treeview .node-title.selected {
+	background:#114488;
+	color:white;
+}
+
+.treeview .node-options {
+	position:relative;
+}
+
+
+.treeview .node-expander{
+	background:url('images/expanded.gif') bottom right no-repeat;
+	width:12px;
+	height:12px;
+	display:inline-block;
+}
+
+.treeview .node-expander.empty{
+	background:none;
+}
+.treeview .node-expander.expanded {
+	background:url('images/expanded.gif') bottom right no-repeat
+}
+.treeview .node-expander.contracted {
+	background:url('images/contracted.gif') bottom right no-repeat
+}
+
+.node-toolbar {
+	position:absolute;
+	width:100px;
+	left:10px;
+	z-index:1000;
+}
+
+.node-toolbar .node-tool{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	padding:1px;
+	background-color:transparent;
+	background-position:left top;
+	background-repeat:no-repeat;
+	margin:1px;
+	text-decoration:none;
+}
+.node-toolbar .node-tool:hover{
+	margin:0px;
+	border:1px solid #7DA2CE;
+	background-color:#DBEAFD;
+}
+
+	.node-toolbar .node-tool.new {
+		background-image:url('images/op-new.gif');
+	}
+	.node-toolbar .node-tool.edit {
+		background-image:url('images/op-edit.gif');
+	}
+	.node-toolbar .node-tool.remove {
+		background-image:url('images/op-remove.gif');
+	}
+	
+	.node-toolbar .node-tool.visible {
+		background-image:url('images/op-visible.gif');
+	}
+	.node-toolbar .node-tool.invisible {
+		background-image:url('images/op-invisible.gif');
+	}
+
+
+.treeview .node-edit {
+	display:inline;
+	width:120px;
+	padding:0px;
+	border:1px solid #aaaaaa;
+	font:11px Arial;
+	color:blue;
+}
+
+.treeview-loader {
+	display:inline-block;
+	width:24px;
+	height:24px;
+	background:url('images/loader.gif') left top no-repeat;
+}
